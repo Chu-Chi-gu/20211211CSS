@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+	a:link {
+		color:#0ff000;
+	}
+	a:visited {
+		color:red;
+	}
+	a:hover {
+		color:green;
+	}
+	a:active {
+		
+	}
+	#id1:hover {
+		color:white;
+	}
+	#id1 {
+		background-color:black;
+	}
+	
+	li:nth-child(odd) {
+		background:black;
+	}
+	
+</style>
+	<body>
+		<div>
+			<a href="https://www.w3schools.com/" target="_blank">Visit Me</a>
+		</div>
+		
+		<div id="id1">
+			<p>Truth me</p>
+		</div>
+		
+		<div>
+			<h2>A到B</h2>
+			<ul>
+				<li>A</li>
+				<li>B</li>
+			</ul>
+			<ul>
+				<li>C</li>
+			</ul>
+			<h2>C到E</h2>
+			<ul>
+				<li>D</li>
+				<li>E</li>
+			</ul>
+			<ul>
+				<li>C</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
