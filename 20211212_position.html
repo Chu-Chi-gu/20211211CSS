@@ -1,0 +1,122 @@
+<!DOCTYPE HTMLE>
+<html>
+<style>
+	.label {
+		top:0px;
+		left:0px;
+		padding:0px 3px 0px 0px;
+	}
+	.endlabel {
+		bottom:0px;
+		right:0px;
+		padding:3px 0px 0px 3px;
+	}
+	.label, .endlabel {
+		position:absolute;
+		background-color:#6AC5AC;
+		color:#414142;
+		line-height:1em;
+	}
+	.elem {
+		border:3px solid #6AC5AC;
+		position:relative;
+	}
+	.elem-red {
+		border:3px solid #D64078;
+	}
+	.elem-red > .label, .elem-red > .endlabel {
+		background-color:#D64078;
+		color:white;
+	}
+	.elem-yellow {
+		border:3px solid #FDC72F;
+	}
+	.elem-yellow > .label, .elem-yellow > .endlabel {
+		background-color:#FDC72F;
+		color:white;
+	}
+	.relative {
+		position:relative;
+	}
+	.relative1 {
+		position:relative;
+		width:600px;
+		height:400px;
+	}
+	.relative2 {
+		position:relative;
+		top:-20px;
+		left:20px;
+		background:white;
+		width:500px;
+	}
+	.elem p {
+		padding:0 1em;
+	}
+	p {
+		margin:1em 0;
+	}
+	p code {
+		background-color:#ECECEC;
+	}
+	.fixed {
+		position:fixed;
+		bottom:0px;
+		right:0px;
+		width:200px;
+		background-color:white;
+	}
+	.absolute {
+		position:absolute;
+		right:0px;
+		top:100px;
+		width:300px;
+		height:200px;
+	}
+	
+
+</style>
+	<body>
+		<div class="relative elem">
+			<span class="label">div class="relative"</span>
+			<p>
+				<code>relative</code>
+				表現得和
+				<code>static</code>
+				一樣。
+			</p>
+			<span class="endlabel">/div</span>
+		</div>
+		<div class="relative2 elem elem-red">
+			<span class="label">div class="relative"</span>
+			<p>
+				<code>relative</code>
+				表現得和
+				<code>static</code>
+				一樣。
+			</p>
+			<span class="endlabel">/div</span>
+		</div>
+		<div class="fixed elem elem-yellow">
+			<span class="label">div class="fixed"</span>
+			<p>
+				不用太關心我
+			</p>
+			<span class="endlabel">/div</span>
+		</div>
+		<div>
+			<p>dsadasdasafafsaxsffafaf</P>
+		</div>
+		
+		<div class="relative1 elem"
+			<span class="label">div class="relative"</span>
+			<p>No one</p>
+			<div class="absolute elem elem-red">
+				<span class="label">div class="absolute"</span>
+				<p>Every one</p>
+				<span class="endlabel">/div</span>
+			</div>
+			<span class="endlabel">/div</span>
+		</div>
+	</body>
+</html>

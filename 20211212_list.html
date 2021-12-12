@@ -1,0 +1,56 @@
+<!DOCTYPE HTMLE>
+<html>
+<style>
+	ul {
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	.menu {
+		font-size:20px;
+	}
+	.menu > li {
+		float:left;
+	}
+	.menu li {
+		position:relative;
+		padding:0px;
+		border:lightblue 1px dashed;
+		min-width:150px;
+	}
+	.menu ul {
+		position:absolute;
+		z-index:10;
+		top:100%;
+		display:none;
+	}
+	.menu ul li>ul {
+		
+	}
+</style>
+	<body>
+		<ul class="menu">
+			<li>台灣
+				<ul>
+					<li>高雄</li>
+					<li>台南</li>
+					<li>台北</li>
+				</ul>
+			</li>
+			<li>日本
+				<ul>
+					<li>札幌</li>
+					<li>北海道</li>
+					<li>京都</li>
+				</ul>
+			</li>
+			<li>韓國
+				<ul>
+					<li>全羅道</li>
+					<li>首爾</li>
+					<li>釜山</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
