@@ -5,6 +5,7 @@
 		margin:0px;
 		padding:0px;
 		list-style:none;
+		box-shadow:5px 5px 10px blue;
 	}
 	.menu {
 		font-size:20px;
@@ -14,9 +15,11 @@
 	}
 	.menu li {
 		position:relative;
-		padding:0px;
-		border:lightblue 1px dashed;
+		padding:20px;
+		border:gray 1px dashed;
+		background:linear-gradient(to bottom right, #B9E6FF, #5C95FF);
 		min-width:150px;
+		transition: opacity .5s linear;
 	}
 	.menu ul {
 		position:absolute;
@@ -24,8 +27,17 @@
 		top:100%;
 		display:none;
 	}
+	.menu ul li > ul {
+		z-index:20;
+		top:5%;
+		left:95%;
+	}
+	.menu li:hover > ul {
+		display:block;
+	}
 </style>
 	<body>
+	
 		<ul class="menu">
 			<li>台灣
 				<ul>
@@ -45,9 +57,16 @@
 				<ul>
 					<li>全羅道</li>
 					<li>首爾</li>
-					<li>釜山</li>
+					<li>釜山
+						<ul>
+							<li>泡菜</li>
+							<li>泡麵</li>
+							<li>泡澡</li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
+	
 	</body>
 </html>

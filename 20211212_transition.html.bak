@@ -1,0 +1,24 @@
+<!DOCTYPE HTMLE>
+<html>
+<style>
+	.button1 {
+		display:inline-block;
+		margin:10px;
+		padding:5px;
+		border:3px solid #EBB3A9;
+		border-radius:10px;
+		width:150px;
+		height:100px;
+		background-color:white;
+		transition:1s;
+	}
+	.button1:hover {
+		background-color:#E86252;
+		<!--background:linear-gradient(to bottom right,#E86252,white);-->
+		cursor:pointer;
+	}
+</style>
+	<body>
+		<button class="button1">CSS</button>
+	</body>
+</html>

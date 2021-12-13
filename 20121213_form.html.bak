@@ -1,0 +1,47 @@
+<!DOCTYPE HTMLE>
+<html>
+<style>
+	form {
+		border:1px solid gray;
+		padding:10px;
+		max-width:400px;
+	}
+	input {
+		margin:10px;
+	}
+	.id1 {
+		float:left
+	}
+</style>
+<script>
+	function getData() {
+		var result="";
+		result += document.getElementsByName('name')[0].value + "<br>";
+		
+		document.getElementsById('result').innerHTML = result;
+	}
+</script>
+	<body>
+		<form>
+			姓名<input type="text" name="name" required placeholder="林義傑"><br>
+			密碼<input type="password" name="pass" required><br>
+			生日<input type="date" name="birth"><br>
+			電子郵件<input type="email" name="email"><br>
+			電話<input type="tel" name="phone" value="09xx-xxx-xxx"><br>
+			輸入時間<input type="time" name="time"><br>
+			輸入日期時間<input type="datetime-local" name="datetime"><br>
+			輸入網址<input type="url" name="url"><br>
+			訂購個數(1-10)<input type="number" name="num1" min="1" max="10"><br>
+			訂購個數(2-10，只允許偶數)<input type="number" name="num1" min="2" max="10" step="2"><br>
+			輸入個數1<input type="range" name="num3" min="1" max="10">10<br>
+			顏色<input type="color" name="color"><br>
+			棒球<input type="checkbox" name="sport" value="baseball"><br>
+			籃球<input type="checkbox" name="sport" value="basketball"><br>
+			男<input type="radio" name="gender" value="male"><br>
+			女<input type="radio" name="gender" value="female"><br>
+			<p id="result"></p>
+			<input type="button" onclick="getData()" value="送出">
+			<input type="reset" value="清空表單">
+		</form>
+	</body>
+</html>
